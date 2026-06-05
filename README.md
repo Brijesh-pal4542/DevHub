@@ -23,7 +23,7 @@ LocalStorage
 - LocalStorage
 - UI/UX Development
 
-![alt text](<../Screenshot 2026-06-05 133744.png>)
-![alt text](<../Screenshot 2026-06-05 133837.png>)
-![alt text](<../Screenshot 2026-06-05 133859.png>)
-![alt text](<../Screenshot 2026-06-05 133914.png>)
+![alt text](<Screenshot 2026-06-05 133744.png>)
+![alt text](<Screenshot 2026-06-05 133837.png>)
+![alt text](<Screenshot 2026-06-05 133859.png>)
+![alt text](<Screenshot 2026-06-05 133914.png>)
