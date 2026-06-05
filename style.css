@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(235deg,#101626,#0f172a);
+    min-height: 100vh;
+    padding-top: 0.5rem;
+    display: flex;
+    align-items:flex-start;
+}
+.hidden{
+    display: none;
+}
+#side-menu,.main-box-dashboard,.main-box-github,.main-box-notes, .main-box-pomodoro,.main-box-goals{
+    background: linear-gradient(250deg,#181f30,#1c2c4f);
+    padding: 0 2rem 2rem 2rem;
+    border: 1px solid #2e4476;
+    min-height: 94vh;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+#side-menu{
+    margin-top: 1rem;
+    min-width: 250px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#menu-heading, .greeting{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+#ul-list li{
+    opacity: 0.7;
+    margin-top: 2rem;
+    border-radius: 18px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+#ul-list li:hover, .card:hover{
+    background-color:#2e4476;
+    opacity: 1;
+    transition: 0.28s ease-in;
+    box-shadow: #2e4476;
+    border: 1px solid #263d73;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.main-box-dashboard,.main-box-github,.main-box-notes,.main-box-pomodoro,.main-box-goals{
+    width: 100%;
+    margin: 1rem 0 1rem 1.5rem;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.greeting span{
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+.stats-grid{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    margin-bottom: 2rem;
+}
+.card, .active-card{
+    border: 1px solid rgb(70, 70, 103);
+    padding: 1rem;
+    border-radius: 15px;
+    background-color:#1e273c;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+.card i{
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+}
+label{
+    min-width: 100px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.4rem;
+    opacity: 0.7;
+}
+.active-card input,.goals input{
+    background-color: #ffffff;
+    margin: 0 1rem 0 0;
+    width: 20px;
+    height: 20px;
+    border:2px solid #6366f1;
+    border-radius: 6px;
+}
+.stats-grid h5{
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(70, 70, 103);
+}
+.search-box{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #2e4476;
+    height: 3rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 0 0 0 1rem;
+}
+.search-box i{
+    font-size: 1.8rem;
+}
+.search-box input{
+    height: 100%;
+    width: 88.5%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+.search-box button{
+    height: 2.7rem;
+    min-width: 8%;
+    font-size: 1.2rem;
+    background-color: #101626;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#profile,.repos{
+    display: flex;
+    min-height: 200px;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #101626;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-top-left-radius:  20px;
+    border-top-right-radius:  20px;
+    padding: 1rem 1rem 1rem 1rem;
+    border-bottom: 1px solid #2e4476;
+}
+.profile-pic{
+    background-image: url("");
+    border-radius: 50%;
+    min-height: 100px;
+    min-width: 200px;
+    margin-right: 4rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #2e4476;
+}
+.additional-data{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    background-color: #101626;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 1rem 1rem 1rem 1rem;
+    cursor: pointer;
+}
+.repos{
+    flex-direction: column;
+}
+.repos h3{
+    margin-bottom: 1rem;
+}
+.repos div{
+    min-width: 100%;
+    padding: 0.3rem 0.3rem 0.3rem 1rem;
+    border-top: 1px solid #263d73;
+    border-bottom: 1px solid #263d73;
+}
+
+.add-btns button{
+    width: 10%;
+    max-height: 43rem;
+    background-color: #101626;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-right: 2rem;
+    
+}
+.add-btns button:hover{
+    background-color: #1e273c;
+    transition: 0.3s;
+}
+.add-btns{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.add-btns i{
+    margin-right: 0.5rem;
+}
+.main-box-notes .stats-grid{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+}
+
+.timer{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    border: 15px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.Pomodoro-timer{
+    height: 80%;
+    width: 50%;
+    margin: 4rem 0 4rem 2rem;
+}
+.Pomodoro-timer .add-btns{
+    display: inline;
+}
+.Pomodoro-timer button{
+    height: 4rem;
+    width: 6rem;
+}
+.pomodoro{
+    display: flex;
+    flex-direction: row;
+}
+.pomodoro-working{
+    max-height: 85vh;
+    width: 30%;
+    border: 1px solid #2e4476;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+}
+.pomodoro-working li,h2{
+    margin: 1rem 0 1rem 0;
+}
+.timer{
+    font-size: 10rem;
+}
+
+.main-box-goals button{
+    margin-left: 2.2rem;
+}
+.goals{
+    min-height: 60vh;
+    width: 100%;
+    border: 1px solid #2e4476;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+.goals div{
+    border-bottom: 1px solid #6366f1;
+    margin-bottom: 2rem;
+}
+.remove-goal {
+    background: #084292;
+    color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
+.remove-goal:hover {
+    background: #0c9dba;
+}
+.goal-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
