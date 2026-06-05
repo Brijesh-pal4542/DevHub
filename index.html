@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <aside id="side-menu">
+        <div id="menu-heading">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>DevHub</span>
+        </div>
+        <ul id="ul-list">
+            <li id="menu-dashboard"><i class="fa-solid fa-house"></i> Dashboard</li>
+            <li id="menu-github"><i class="fa-brands fa-github"></i> GitHub Finder</li>
+            <li id="menu-notes"><i class="fa-solid fa-note-sticky"></i> Notes</li>
+            <li id="menu-pomodoro"><i class="fa-solid fa-clock"></i> Pomodoro</li>
+            <li id="menu-daily-goals"><i class="fa-solid fa-list-check"></i> Daily Goals</li>
+        </ul>
+    </aside>
+
+    <div class="main-box-dashboard">
+        <div class="greeting">
+            Good Morning, Brijesh Pal</br>
+            <span>Lets make today productive.</span>
+        </div>
+        <div class="main-content">
+            <div class="stats-grid">
+                <div class="card">
+                    <p>Goals Completed<i class="fa-regular fa-circle-check"></i></p>
+                    <h4 id="goals-completed">0/0</h4>
+                </div>
+                <div class="card">
+                    <p>Notes Created<i class="fa-regular fa-note-sticky"></i></p>
+                    <h4 id="notes-created">0</h4>
+                </div>
+                <div class="card">
+                    <p>Focus Hours<i class="fa-solid fa-bullseye"></i></p>
+                    <h4>0hrs</h4>
+                </div>
+                <div class="card">
+                    <p>Current Streak <i class="fa-brands fa-gripfire"></i> </p>
+                    <h4>0 days</h4>
+                </div>
+            </div>
+
+            <div class="active-card">
+                <h4>Today's Goals</h4>
+                <span id="todays-goals">0/0 Completed</span><br>
+            </div>
+
+            <div>Recent Notes</div>
+            <div class="stats-grid" id="recent-notes"></div>
+        </div>
+    </div>
+
+    <div class="main-box-github hidden">
+        <div class="greeting">
+            GitHub Explorer</br>
+            <span>Search and explore any github profile.</span>
+        </div>
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search any profile">
+            <button>Search</button>
+        </div>
+        <div id="github-profile">
+            <div id="profile">
+                <div class="profile-pic"></div>
+                <div class="profile-detail">
+                    <h3>xxxxxxxx</h3>
+                    <ul>
+                        <li id="loc">xxxxxxxx</li>
+                        <li id="bio">xxxxxxxx</li>
+                        <li id="joining-date">xxxxxxxx</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="additional-data">
+                <div>
+                    <h4>Repositories</h4>
+                    <h3 id="repos">0</h3>
+                </div>
+                <div>
+                    <h4>Followers</h4>
+                    <h3 id="follower">0</h3>
+                </div>
+                <div>
+                    <h4>Following</h4>
+                    <h3 id="following">0</h3>
+                </div>
+                <div>
+                    <h4>Gists</h4>
+                    <h3 id="gists">0</h3>
+                </div>
+            </div>
+            <div class="repos">
+                <h3>Recent Repositories</h3>
+                <a href="#" id="repo1"></a>
+                <a href="#" id="repo2"></a>
+                <a href="#" id="repo3"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-box-notes hidden">
+        <div class="greeting">
+            My Notes</br>
+            <span>All your notes in one place</span>
+        </div>
+        <div class="add-btns">
+            <button id="add-note"><i class="fa-solid fa-plus"></i>ADD</button>
+            <button id="delete-note"><i class="fa-solid fa-trash"></i>Delete</button>
+        </div>
+        <div class="stats-grid" id="notes"></div>
+    </div>
+
+    <div class="main-box-pomodoro hidden">
+        <div class="greeting">
+            Pomodoro Timer</br>
+            <span>Focus, Work, Achieve</span>
+        </div>
+        <div class="pomodoro">
+            <div class="Pomodoro-timer">
+                <div class="timer">25:00</div>
+                <div class="add-btns">
+                    <button id="start">Start</button>
+                    <button id="pause">Pause</button>
+                    <button id="stop">Stop</button>
+                </div>
+            </div>
+            <div class="pomodoro-working">
+                <h2> How Pomodoro-timer works</h2>
+                <ul>
+                    <li>25 min-work Session</li>
+                    <li>5 min break Session</li>
+                    <li>Start button to Start timer</li>
+                    <li>Pause button to Pause timer</li>
+                   <li>Stop button to reset the timer</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-box-goals hidden">
+        <div class="greeting">
+            Today's Goals</br>
+            <span>Plan your day and Achieve more.</span>
+        </div>
+        <div class="search-box">
+            <input type="search" placeholder="Add a new Goal" id="goal-input">
+            <button id="add-goal">Add</button>
+        </div>
+        <div class="goals"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html
